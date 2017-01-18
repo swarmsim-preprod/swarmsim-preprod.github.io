@@ -1,9 +1,9 @@
 {
-  "version": "1.0.63",
-  "updated": "2017-01-18T06:05:42.669Z",
+  "version": "1.0.64",
+  "updated": "2017-01-18T07:19:20.019Z",
   "githash": {
-    "hash": "69dd398403d5f57a286b5e0786c12a09535caccf",
-    "short": "69dd398",
+    "hash": "b9d889273ba9915209cf4a5819cbe6c258fc8a64",
+    "short": "b9d8892",
     "tag": "v1.0.63",
     "branch": "HEAD"
   }
