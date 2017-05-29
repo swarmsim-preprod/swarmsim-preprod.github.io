@@ -28,16 +28,18 @@ https://github.com/erosson/swarm
       //ga('send', 'pageview'); // angulartics does this </script> <script type="text/javascript" src="https://s3.amazonaws.com/assets.freshdesk.com/widget/freshwidget.js"></script> <!--[if lt IE 9]>
     <script src="bower_components/es5-shim/es5-shim.js"></script>
     <script src="bower_components/json3/lib/json3.min.js"></script>
-    <![endif]--> <script src="scripts/vendor.8e53feab.js"></script> <script src="scripts/scripts.1ad854db.js"></script>  <script> // this is hideous, but we're broken in safari, don't have a mac to fix it with, and kong staff insists on this
+    <![endif]--> <script src="scripts/vendor.8e53feab.js"></script> <script src="scripts/scripts.927bbc40.js"></script>  <script> // this is hideous, but we're broken in safari, don't have a mac to fix it with, and kong staff insists on this
 var ua = window && window.navigator && window.navigator.userAgent
 var isSafari = ua.match(/Version\/(\S+).*?Safari\//);
 if (isSafari) {
   jQuery('.safarisupport').style({'display':'initial'});
 } </script> <script> // https://codelabs.developers.google.com/codelabs/add-to-home-screen/#5
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/service-worker.js').then(function(reg){
-    console.log("service worker registered");
-  }).catch(function(err) {
-    console.warn("service worker registration failed", err)
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/service-worker.js').then(function(reg){
+      console.log("service worker registered");
+    }).catch(function(err) {
+      console.warn("service worker registration failed", err)
+    });
   });
 } </script>  <!-- MEOW --> 
